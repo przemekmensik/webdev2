@@ -1,13 +1,27 @@
-@import '_mixins.scss';
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
 
+
+@font-face {
+	font-family: "Raleway-black";
+	src: url('/fonts/raleway-black-webfont.ttf');
+}
+
+@font-face {
+	font-family: "Raleway-bold";
+	src: url('/fonts/raleway-bold-webfont.ttf');
+}
+
+@font-face {
+	font-family: "Pacifico";
+	src: url('/fonts/pacifico-webfont.ttf');
+
+}
 
 
 $zmienna : rgb(173, 230, 117);
 $font: 'Raleway',sans-serif;
 $zmienna1: rgb(35, 163, 14);
 $zmienna2: rgb(190, 130, 82);
+
 
 
 
@@ -31,7 +45,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 16px;
 	font: inherit;
 	vertical-align: baseline;
   box-sizing: border-box;
@@ -48,7 +62,7 @@ h1 {
 
 .logo {
   font-family: 'Pacifico',cursive;
-  font-size: 50px;
+  font-size: 300%;
   margin: 25px 0;
   font-weight: 400;
   float: left;
@@ -58,6 +72,17 @@ h1 {
 #navigation-bar {
   height: 147px;
   border: 1px solid red;
+a {
+	color: rgb(5, 5, 5);
+	font-family: $font;
+	font-weight: bold;
+	padding:9px;
+	///padding-top: 3px;
+}
+a:hover {
+	border-top: 3px solid #ff6033;
+	text-decoration: none;
+}
 }
 
 .container {
@@ -73,20 +98,22 @@ h1 {
   height: 1000px;
   margin: 0 auto;
   border: 1px solid green;
+p {
+	font-family: "Raleway-black";
+	font-size: 350%;
+}
 }
 
 #about {
   background: #00bbbb;
-	background-image: url('/img/strawberry.png');
-	background-repeat: no-repeat;
+	//	background-image: url('/img/strawberry.png');
+	//background-repeat: no-repeat;
   height: 700px;
 }
 
 #services {
   background: #70bfff;
   height: 790px;
-	background-image: url('/img/services.png');
-	background-repeat: no-repeat;
 }
 
 #gallery {
@@ -115,13 +142,13 @@ footer {
 }
 
 ul li {
-	display: inline-flex;
-	flex-direction: row-reverse;
+	display: inline-block;
 	float:right;
+	text-align: right;
 	margin-top: 65px;
 	color: $zmienna1;
 	padding-right: 2%;
-	font-family: "Raleway-Bold";
+	font-family: "Raleway-bold";
 	color: #262626;
 }
 /*
