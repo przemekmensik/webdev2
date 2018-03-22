@@ -71,6 +71,10 @@ h1 {
   text-decoration: none;
 }
 
+.menu {
+  display: inline-flex;
+}
+
 .container {
   width: 100vw;
   border: 1px solid red;
@@ -128,9 +132,9 @@ footer {
 }
 
 ul li {
-  display: inline-block;
-  float: right;
-  text-align: right;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
   margin-top: 65px;
   color: #23a30e;
   padding-right: 2%;

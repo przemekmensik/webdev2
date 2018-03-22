@@ -85,6 +85,10 @@ a:hover {
 }
 }
 
+.menu {
+	display: inline-flex;
+}
+
 .container {
   width: 100vw;
   border: 1px solid red;
@@ -142,9 +146,10 @@ footer {
 }
 
 ul li {
-	display: inline-block;
-	float:right;
-	text-align: right;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	//float:right;
 	margin-top: 65px;
 	color: $zmienna1;
 	padding-right: 2%;
