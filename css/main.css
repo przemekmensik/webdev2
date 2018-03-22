@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+/* komentarz*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  height: 100vh;
+}
+
+h1 {
+  color: #23a30e;
+}
+
+.logo {
+  font-family: 'Pacifico',cursive;
+  font-size: 50px;
+  margin: 25px 0;
+  font-weight: 400;
+  float: left;
+  color: #262626;
+}
+
+#navigation-bar {
+  height: 147px;
+  border: 1px solid red;
+}
+
+.container {
+  width: 100vw;
+  border: 1px solid red;
+  background: rgbq(189, 19, 128, 0.2);
+}
+
+#home {
+  background-image: url("/img/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 1000px;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+
+#about {
+  background: #00bbbb;
+  background-image: url("/img/strawberry.png");
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+#services {
+  background: #70bfff;
+  height: 790px;
+  background-image: url("/img/services.png");
+  background-repeat: no-repeat;
+}
+
+#gallery {
+  background: #ffe92f;
+  height: 1536px;
+}
+
+#subscribe {
+  background: #ffffff;
+  height: 500px;
+}
+
+#blog {
+  background: #b07cf7;
+  height: 863px;
+}
+
+#contact {
+  background: #7cf781;
+  height: 866px;
+}
+
+footer {
+  height: 90px;
+  background: #262626;
+}
+
+ul li {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  float: right;
+  margin-top: 65px;
+  color: #23a30e;
+  padding-right: 2%;
+  font-family: "Raleway-Bold";
+  color: #262626;
+}
+
+/*
+ul li {
+  color: $zmienna1;
+  text-decoration: none;
+  display: inline;
+  float: right;
+  padding: 2%;
+	margin-top: 65px;
+}
+*/
+
+/*# sourceMappingURL=main.css.map */
