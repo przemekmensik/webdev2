@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -46,6 +46,7 @@ h1 {
 }
 
 .logo {
+  display: block;
   font-family: 'Pacifico',cursive;
   font-size: 300%;
   margin: 25px 0;
@@ -54,9 +55,15 @@ h1 {
   color: #262626;
 }
 
+.navbar {
+  display: inline;
+}
+
 #navigation-bar {
   height: 147px;
+  width: 100vw;
   border: 1px solid red;
+  background-color: #f9f8fb;
 }
 
 #navigation-bar a {
@@ -64,6 +71,7 @@ h1 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   padding: 9px;
+  cursor: pointer;
 }
 
 #navigation-bar a:hover {
@@ -72,7 +80,8 @@ h1 {
 }
 
 .menu {
-  display: inline-flex;
+  display: inline;
+  float: right;
 }
 
 .container {
@@ -91,14 +100,47 @@ h1 {
   border: 1px solid green;
 }
 
-#home p {
+#home h2 {
   font-family: "Raleway-black";
-  font-size: 350%;
+  font-size: 40px;
+  margin-top: 180px;
+}
+
+#home p {
+  margin: 20px 0 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  height: 40px;
+  width: 160px;
+  background-color: #eb6c04;
+  padding: 6px 12px;
+  color: white;
+  font-size: 17px;
+  font-family: "Raleway";
+  vertical-align: middle;
+  box-shadow: 0 2px 5px 0 #000000;
+}
+
+.scroll-image {
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 40px;
+  height: 70px;
 }
 
 #about {
   background: #00bbbb;
   height: 700px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
 }
 
 #services {
@@ -121,9 +163,13 @@ h1 {
   height: 863px;
 }
 
+#contact img {
+  width: 100vw;
+}
+
 #contact {
-  background: #7cf781;
   height: 866px;
+  background-position: center;
 }
 
 footer {
@@ -135,11 +181,15 @@ ul li {
   display: inline-flex;
   flex-flow: row wrap;
   align-items: flex-end;
-  margin-top: 65px;
+  margin-top: 55px;
   color: #23a30e;
   padding-right: 2%;
   font-family: "Raleway-bold";
   color: #262626;
+}
+
+.col-md-4 .col-sm-7 .col-xs-12 {
+  margin-top: 100px;
 }
 
 /*

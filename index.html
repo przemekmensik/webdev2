@@ -9,36 +9,60 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <title>Hello, world!</title>
+  <title>Webdev2</title>
 </head>
 
 <body>
-  <div id="home" >
-    <nav id="navigation-bar" class="container">
+  <div id="home">
+    <nav id="navigation-bar" class="container" role="navigation">
       <div class="menu">
         <ul>
-          <li><a href="#one">HOME</a></li>
-          <li><a href="#two">ABOUT</a></li>
-          <li><a href="#three">SERVICES</a></li>
-          <li><a href="#four">GALLERY</a></li>
-          <li><a href="#five">BLOG</a></li>
-          <li><a href="#five">CONTACT</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
-      <h1 class="logo">Cahee</h>
+      <h1 class="logo">Cahee</h1>
     </nav>
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-7 col-xs-12">
-          <p>Fresh Life</p>
+          <h2>Fresh Life</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            In ullamcorper sit amet urna sit amet interdum.
+            Morbi eget nunc libero.
+          </p>
+          <a href="#" class="btn">
+            GET FREE NOW
+          </a>
+
         </div>
       </div>
+    </div>
+    <div class="scroll-image">
+      <a href="about"><img src="img/scroll.png" class="img-responsive scroll"></a>
     </div>
   </div>
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-7 col-xs-12">
+            <div class="about-content">
+              <h2>Fresh Life</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  In ullamcorper sit amet urna sit amet interdum.
+                  Morbi eget nunc libero.
+                </p>
+                <a href="#" class="btn">
+                  GET FREE NOW
+                </a>
+              </div>
+          </div>
           <img src="img/strawberry.png" class="img-responsive">
         </div>
       </div>
@@ -59,15 +83,20 @@
   <div id="blog" class="container" >
 
   </div>
-  <div id="contact" class="container">
+  <div id="contact">
+    <img src="img/contact.png" class="img-responsive">
+    <div class="container">
 
+    </div>
   </div>
   <footer></foter>
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/smoothscroll.js"></script>
+
 </body>
 
 </html>

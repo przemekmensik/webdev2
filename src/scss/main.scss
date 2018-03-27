@@ -17,6 +17,8 @@
 }
 
 
+
+
 $zmienna : rgb(173, 230, 117);
 $font: 'Raleway',sans-serif;
 $zmienna1: rgb(35, 163, 14);
@@ -34,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -61,6 +63,8 @@ h1 {
 }
 
 .logo {
+	display: block;
+	//padding-right: 400px;
   font-family: 'Pacifico',cursive;
   font-size: 300%;
   margin: 25px 0;
@@ -68,15 +72,20 @@ h1 {
   float: left;
   color: #262626;
 }
-
+.navbar {
+	display:inline;
+}
 #navigation-bar {
   height: 147px;
+	width: 100vw;
   border: 1px solid red;
+	background-color: #f9f8fb;
 a {
 	color: rgb(5, 5, 5);
 	font-family: $font;
 	font-weight: bold;
 	padding:9px;
+	cursor: pointer;
 	///padding-top: 3px;
 }
 a:hover {
@@ -86,7 +95,9 @@ a:hover {
 }
 
 .menu {
-	display: inline-flex;
+	display: inline;
+	float: right;
+
 }
 
 .container {
@@ -94,6 +105,7 @@ a:hover {
   border: 1px solid red;
   background: rgbq(189, 19, 128, 0.2)
 }
+
 #home {
   background-image: url('/img/home.png');
 	background-repeat: no-repeat;
@@ -102,10 +114,35 @@ a:hover {
   height: 1000px;
   margin: 0 auto;
   border: 1px solid green;
-p {
+h2 {
 	font-family: "Raleway-black";
-	font-size: 350%;
+	font-size: 40px;
+	margin-top: 180px;
 }
+p {
+	margin: 20px 0 20px 0;
+}
+}
+.btn {
+	display: inline-block;
+	height: 40px;
+	width: 160px;
+	background-color: rgb(235, 108, 4);
+	padding: 6px 12px;
+	color: white;
+	font-size: 17px;
+	font-family: "Raleway";
+	vertical-align: middle;
+	box-shadow: 0 2px 5px 0 #000000;
+}
+.scroll-image {
+	display: block;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	width: 40px;
+	height: 70px;
+
 }
 
 #about {
@@ -113,6 +150,12 @@ p {
 	//	background-image: url('/img/strawberry.png');
 	//background-repeat: no-repeat;
   height: 700px;
+}
+
+.about-content{
+	display: flex;
+	justify-content: flex-end;
+	background-color: black;
 }
 
 #services {
@@ -135,9 +178,13 @@ p {
   height: 863px;
 }
 
+#contact img {
+    width:  100vw;
+}
 #contact {
-  background: #7cf781;
+  //background: #7cf781;
   height: 866px;
+	background-position: center;
 }
 
 footer {
@@ -150,11 +197,15 @@ ul li {
 	flex-flow: row wrap;
 	align-items: flex-end;
 	//float:right;
-	margin-top: 65px;
+	margin-top: 55px;
 	color: $zmienna1;
 	padding-right: 2%;
 	font-family: "Raleway-bold";
 	color: #262626;
+}
+
+.col-md-4 .col-sm-7 .col-xs-12 {
+	margin-top: 100px;
 }
 /*
 ul li {
