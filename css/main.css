@@ -56,7 +56,7 @@ h1 {
 }
 
 .navbar {
-  display: inline;
+  display: none;
 }
 
 #navigation-bar {
@@ -202,5 +202,27 @@ ul li {
 	margin-top: 65px;
 }
 */
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: block;
+    background-color: #f9f8fb;
+  }
+  .navbar a {
+    margin: 0 auto;
+    color: #050505;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    padding: 9px;
+    cursor: pointer;
+  }
+  .navbar a:hover {
+    border-top: 3px solid #ff6033;
+    border-height: 80vw;
+    text-decoration: none;
+  }
+  #navigation-bar {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
