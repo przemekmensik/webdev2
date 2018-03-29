@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Raleway-black";
-  src: url("/fonts/raleway-black-webfont.woff");
+  src: url("../fonts/raleway-black-webfont.woff");
 }
 
 @font-face {
   font-family: "Raleway-bold";
-  src: url("/fonts/raleway-bold-webfont.woff");
+  src: url("../fonts/raleway-bold-webfont.woff");
 }
 
 @font-face {
   font-family: "Pacifico";
-  src: url("/fonts/pacifico-webfont.woff");
+  src: url("../fonts/pacifico-webfont.woff");
 }
 
 /* komentarz*/
@@ -118,11 +118,10 @@ h1 {
 .container {
   width: 100vw;
   border: 1px solid red;
-  background: rgbq(189, 19, 128, 0.2);
 }
 
 #home {
-  background-image: url("/img/home.png");
+  background-image: url("../img/home.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -165,7 +164,7 @@ h1 {
 
 #about {
   background: #00bbbb;
-  background-image: url("/img/strawberry.png");
+  background-image: url("../img/strawberry.png");
   background-repeat: no-repeat;
   background-position: 25% 25%;
   height: 700px;
@@ -178,12 +177,13 @@ h1 {
 
 .about-content h2 {
   font-size: 3em;
+  font-family: "Raleway-bold";
 }
 
 #services {
   background: #70bfff;
   height: 790px;
-  background-image: url("/img/services.png");
+  background-image: url("../img/services.png");
   background-repeat: no-repeat;
   background-position: 75% 25%;
 }
@@ -191,6 +191,17 @@ h1 {
 #gallery {
   background: #ffe92f;
   height: 1536px;
+  text-align: center;
+}
+
+#gallery h2 {
+  color: #101110;
+  font-family: "Raleway-bold";
+  font-size: 3em;
+}
+
+#gallery p {
+  margin: 20px 0 20px 0;
 }
 
 #subscribe {
@@ -228,10 +239,16 @@ ul li {
   color: #262626;
 }
 
-.col-md-4 .col-sm-7 .col-xs-12 {
+.col-centered {
+  float: none;
+  margin: 0 auto;
   margin-top: 100px;
 }
 
+/*
+.col-md-4 .col-sm-7 .col-xs-12 {
+	margin-top: 100px;
+}
 /*
 ul li {
   color: $zmienna1;
