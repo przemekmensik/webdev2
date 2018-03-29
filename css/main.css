@@ -84,6 +84,7 @@ h1 {
   position: fixed;
   margin: 0 auto;
   text-align: center;
+  z-index: 500;
 }
 
 #navigation-bar {
@@ -94,6 +95,7 @@ h1 {
   position: fixed;
   margin: 0 auto;
   text-align: center;
+  z-index: 500;
 }
 
 #navigation-bar a {
