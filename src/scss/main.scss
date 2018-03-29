@@ -195,12 +195,16 @@ p {
 }
 
 .about-content{
-	display: flex;
+	//display: flex;
 	color: rgb(255, 255, 255);
-	h2 {
+	margin-top: 11.250em;
+h2 {
+		display: block;
 		font-size: 3em;
 		font-family: "Raleway-bold";
-
+	 }
+p 	{
+	//margin: 20px 0;
 	}
 }
 
@@ -224,6 +228,28 @@ h2 {
 p {
 	margin: 20px 0 20px 0;
 
+	}
+}
+
+.gallery-images {
+	padding: 20px;
+img {
+	//height: 100%;
+	//width: 100%;
+}
+img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+img:hover {
+  width: 110%;
+}
+
+img:hover img{
+  -webkit-transform: scale3d(1.5, 1.5, 2);
+          transform: scale3d(1.5, 1.5, 1);
 }
 }
 
