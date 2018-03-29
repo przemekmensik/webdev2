@@ -230,10 +230,10 @@ p {
 
 	}
 }
-
+/*
 .gallery-images {
-	padding: 20px;
 img {
+	padding: 50px;
 	//height: 100%;
 	//width: 100%;
 }
@@ -252,7 +252,7 @@ img:hover img{
           transform: scale3d(1.5, 1.5, 1);
 }
 }
-
+*/
 #subscribe {
   background: #ffffff;
   height: 500px;
@@ -336,5 +336,10 @@ ul li {
 	}
 	#navigation-bar {
 		display: none;
+	}
+	.gallery-images {
+	img {
+		width: 100vw;
+	}
 	}
 }
