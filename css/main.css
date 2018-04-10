@@ -44,6 +44,7 @@ time, mark, audio, video {
 body {
   background: white;
   height: 100vh;
+  width: 100vw;
 }
 
 .navbar-toggle {
@@ -216,6 +217,11 @@ h1 {
   margin: 0 auto;
 }
 
+#gallery-hide {
+  display: none;
+  margin: 0 auto;
+}
+
 .peach {
   height: 100%;
   width: 100%;
@@ -320,7 +326,7 @@ ul li {
 @media screen and (max-width: 768px) {
   .navbar {
     display: block;
-    background-color: #f9f8fb;
+    background-color: rgba(249, 255, 241, 0.8);
   }
   .navbar a {
     margin: 0 auto;
