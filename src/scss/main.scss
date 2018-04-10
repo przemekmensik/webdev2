@@ -11,6 +11,12 @@
 }
 
 @font-face {
+	font-family: "Raleway-light";
+	src: url('../fonts/raleway-light-webfont.woff');
+
+}
+
+@font-face {
 	font-family: "Pacifico";
 	src: url('../fonts/pacifico-webfont.woff');
 
@@ -172,7 +178,7 @@ p {
 	padding: 6px 12px;
 	color: white;
 	font-size: 17px;
-	font-family: "Raleway";
+	font-family: "Raleway-light";
 	vertical-align: middle;
 	box-shadow: 0 2px 5px 0 #000000;
 }
@@ -218,7 +224,7 @@ p 	{
 
 #gallery {
   background: #ffe92f;
-  height: 1536px;
+  //height: 1536px;
 	text-align: center;
 h2 {
 	color: rgb(16, 17, 16);
@@ -229,6 +235,29 @@ p {
 	margin: 20px 0 20px 0;
 
 	}
+}
+.gallery-row{
+	width:64vw;
+	margin: 0 auto;
+}
+.peach{
+	height: 100%;
+	width:100%;
+	padding: 0;
+}
+.berries {
+	//margin-right: 480px;
+	height:49%;
+}
+.another_berries {
+	height:49%;
+}
+#gallery-button{
+	padding-top: 51px;
+	padding-bottom: 120px;
+}
+.gallery-btn {
+	background-color: #5585a2;
 }
 /*
 .gallery-images {
@@ -339,7 +368,12 @@ ul li {
 	}
 	.gallery-images {
 	img {
-		width: 100vw;
+		width: 80vw;
 	}
+	}
+
+	.gallery-row {
+	    width: auto;
+	    margin: 0 auto;
 	}
 }
