@@ -62,10 +62,19 @@ time, mark, audio, video {
 body {
     background:rgb(255, 255, 255);
     height: 100vh;
-		width:100vw;
+		width:100%;
 		//padding-top: 70px;
 }
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+	 height:auto!important;
 
+}
+
+h2 {
+	font-size: 3em;
+}
 .navbar-toggle {
     position:relative;
     float:right;
@@ -164,7 +173,7 @@ a:hover {
   border: 1px solid green;
 h2 {
 	font-family: "Raleway-black";
-	font-size: 40px;
+	font-size: 4em;
 	margin-top: 180px;
 }
 p {
@@ -207,7 +216,7 @@ p {
 	margin-top: 11.250em;
 h2 {
 		display: block;
-		font-size: 3em;
+		font-size: 4em;
 		font-family: "Raleway-bold";
 	 }
 p 	{
@@ -221,6 +230,38 @@ p 	{
 	background-image: url('../img/services.png');
 	background-repeat: no-repeat;
 	background-position: 75% 25%;
+	h2 {
+		margin-top: 48%;
+		margin-left: 30%;
+		font-size: 4em;
+		font-family: "Raleway-bold";
+		color: rgb(255, 255, 255);
+		//float:right;
+		//width: 60%;
+		//display: block;
+	}
+}
+
+
+
+.services-button-all {
+	width: 450px;
+	padding-top: 11.25rem;
+	padding-left: 7.1875rem;
+	margin-bottom: 9.375rem;
+}
+.services-button:before {
+	font-family: fontAwesome;
+  content: "\f067\00a0";
+}
+.services-button {
+	width: 25rem;
+	height: 6.25rem;
+	background-color: rgb(255, 255, 255);
+	display: block;
+	margin-bottom: 1.25rem;
+	font-family: "Raleway-bold";
+	font-size: 20px;
 }
 
 #gallery {
@@ -230,7 +271,7 @@ p 	{
 h2 {
 	color: rgb(16, 17, 16);
 	font-family: "Raleway-bold";
-	font-size: 3em;
+	font-size: 4em;
 	}
 p {
 	margin: 20px 0 20px 0;
@@ -383,5 +424,26 @@ ul li {
 	.gallery-row {
 	    width: auto;
 	    margin: 0 auto;
+	}
+	.services-row {
+		width: auto;
+		margin: 0 auto;
+	}
+	.services-button-all {
+		width: auto;
+		margin: 0 auto;
+		padding-top: 5rem;
+		padding-left: 0rem;
+		margin-bottom: 0rem;
+	}
+
+	#services  {
+		h2{
+			margin-top: 10%;
+			margin-left: 0	;
+			font-size: 4em;
+			font-family: "Raleway-bold";
+			color: rgb(255, 255, 255);			
+		}
 	}
 }

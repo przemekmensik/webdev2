@@ -44,7 +44,17 @@ time, mark, audio, video {
 body {
   background: white;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: auto !important;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 .navbar-toggle {
@@ -140,7 +150,7 @@ h1 {
 
 #home h2 {
   font-family: "Raleway-black";
-  font-size: 40px;
+  font-size: 4em;
   margin-top: 180px;
 }
 
@@ -185,7 +195,7 @@ h1 {
 
 .about-content h2 {
   display: block;
-  font-size: 3em;
+  font-size: 4em;
   font-family: "Raleway-bold";
 }
 
@@ -197,6 +207,36 @@ h1 {
   background-position: 75% 25%;
 }
 
+#services h2 {
+  margin-top: 48%;
+  margin-left: 30%;
+  font-size: 4em;
+  font-family: "Raleway-bold";
+  color: white;
+}
+
+.services-button-all {
+  width: 450px;
+  padding-top: 11.25rem;
+  padding-left: 7.1875rem;
+  margin-bottom: 9.375rem;
+}
+
+.services-button:before {
+  font-family: fontAwesome;
+  content: "\f067\00a0";
+}
+
+.services-button {
+  width: 25rem;
+  height: 6.25rem;
+  background-color: white;
+  display: block;
+  margin-bottom: 1.25rem;
+  font-family: "Raleway-bold";
+  font-size: 20px;
+}
+
 #gallery {
   background: #ffe92f;
   text-align: center;
@@ -205,7 +245,7 @@ h1 {
 #gallery h2 {
   color: #101110;
   font-family: "Raleway-bold";
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #gallery p {
@@ -356,6 +396,24 @@ ul li {
   .gallery-row {
     width: auto;
     margin: 0 auto;
+  }
+  .services-row {
+    width: auto;
+    margin: 0 auto;
+  }
+  .services-button-all {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+  }
+  #services h2 {
+    margin-top: 10%;
+    margin-left: 0;
+    font-size: 4em;
+    font-family: "Raleway-bold";
+    color: white;
   }
 }
 
