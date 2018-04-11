@@ -201,7 +201,7 @@ h1 {
 
 #services {
   background: #70bfff;
-  height: 790px;
+  height: 100vh;
   background-image: url("../img/services.png");
   background-repeat: no-repeat;
   background-position: 75% 25%;
@@ -406,12 +406,22 @@ ul li {
     margin: 0 auto;
     padding-top: 5rem;
     padding-left: 0rem;
-    margin-bottom: 0rem;
+    margin-bottom: 4rem;
+  }
+  .services-button {
+    width: 20rem;
+    height: 4.25rem;
+    background-color: white;
+    display: block;
+    margin-bottom: 1.25rem;
+    font-family: "Raleway-bold";
+    font-size: 20px;
   }
   #services h2 {
     margin-top: 10%;
     margin-left: 0;
-    font-size: 4em;
+    font-size: 3em;
+    text-align: center;
     font-family: "Raleway-bold";
     color: white;
   }
