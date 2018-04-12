@@ -284,7 +284,12 @@ p {
 	margin: 0 auto;
 }
 
-#gallery-hide{
+#gallery-hide  {
+	display: none;
+	margin: 0 auto;
+}
+
+#blog-hide {
 	display: none;
 	margin: 0 auto;
 }
@@ -365,6 +370,31 @@ img:hover img{
   text-align: center;
 }
 
+.blog-img-one {
+  background: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 1)), url('/img/blog1.png');
+	background-size: cover;
+	width: 23.4375rem;
+	height: 19.375rem;
+	margin-bottom: 10px;
+}
+
+.blog-img-two {
+  background: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 1)), url('/img/blog2.png');
+	background-size: cover;
+	width: 23.4375rem;
+	height: 19.375rem;
+	margin-bottom: 10px;
+}
+
+.blog-img-three {
+  background: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 1)), url('/img/blog3.png');
+	background-size: cover;
+		width: 23.4375rem;
+	height: 19.375rem;
+	margin-bottom: 10px;
+}
+
+
 #contact img {
     width:  100vw;
 }
@@ -442,7 +472,7 @@ ul li {
 	}
 	.gallery-images {
 	img {
-		width: 80vw;
+		width: 90vw;
 	}
 	}
 
@@ -481,5 +511,11 @@ ul li {
 			font-family: "Raleway-bold";
 			color: rgb(255, 255, 255);
 		}
+	}
+	.blog-img {
+		margin: 0 auto;
+		margin-bottom: 10px;
+		width: 80vw;
+		//height:
 	}
 }
