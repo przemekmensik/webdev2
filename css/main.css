@@ -250,6 +250,7 @@ h1 {
 
 #gallery p {
   margin: 20px 0 20px 0;
+  font-family: "Raleway-light";
 }
 
 .gallery-row {
@@ -315,7 +316,33 @@ img:hover img{
 
 #blog {
   background: #b07cf7;
-  height: 863px;
+  height: 100%;
+}
+
+#blog h2 {
+  color: white;
+  font-family: "Raleway-bold";
+  font-size: 4em;
+  text-align: center;
+}
+
+#blog p {
+  font-family: "Raleway-light";
+  font-size: 17px;
+  color: white;
+  margin-bottom: 3.125rem;
+}
+
+#blog-button {
+  padding-top: 51px;
+  padding-bottom: 120px;
+}
+
+.blog-btn {
+  background-color: #f72b3b;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #contact img {
