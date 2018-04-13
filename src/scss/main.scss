@@ -169,7 +169,7 @@ h1 {
 	//padding-right: 400px;
 	font-family: 'Pacifico',cursive;
 	font-size: 300%;
-	margin-top: 25px;
+	//margin-top: 25px;
 	margin-left: 7vw;
 	font-weight: 400;
 	float: left;
@@ -185,7 +185,7 @@ h1 {
 }
 
 #navigation-bar {
-	height: 147px;
+	//height: 147px;
 	width: 100vw;
 	border: 1px solid red;
 	background-color: #f9f8fb;
@@ -215,9 +215,10 @@ h1 {
 }
 
 .menu {
-	display: inline;
+	display: block;
 	float: right;
 	margin-right: 7vw;
+	margin-top: -25px;
 }
 
 .container {
