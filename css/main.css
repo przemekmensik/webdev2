@@ -19,19 +19,86 @@
 }
 
 /* komentarz*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -47,7 +114,8 @@ body {
   width: 100%;
 }
 
-html, body {
+body,
+html {
   max-width: 100%;
   overflow-x: hidden;
   height: auto !important;
@@ -57,10 +125,19 @@ h2 {
   font-size: 3em;
 }
 
+/*
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
+*/
 .navbar-toggle {
   position: relative;
   float: right;
-  padding: 10px 10px;
+  padding: 10px;
   margin-top: 15px;
   margin-right: 15px;
   margin-bottom: 8px;
@@ -127,6 +204,10 @@ h1 {
   text-decoration: none;
 }
 
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
 .menu {
   display: inline;
   float: right;
@@ -155,7 +236,7 @@ h1 {
 }
 
 #home p {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 }
 
 .btn {
@@ -249,7 +330,7 @@ h1 {
 }
 
 #gallery p {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
   font-family: "Raleway-light";
 }
 
@@ -322,20 +403,25 @@ img:hover img{
 #blog {
   background: #b07cf7;
   height: 100%;
+  font-size: 100%;
+  font-family: "Raleway-light";
+  color: white;
 }
 
 #blog h2 {
   color: white;
   font-family: "Raleway-bold";
-  font-size: 4em;
+  font-size: 400%;
   text-align: center;
 }
 
-#blog p {
-  font-family: "Raleway-light";
-  font-size: 17px;
-  color: white;
+.blog-text {
   margin-bottom: 3.125rem;
+}
+
+.blog-row {
+  width: 75vw;
+  margin: 0 auto;
 }
 
 #blog-button {
@@ -351,27 +437,100 @@ img:hover img{
 }
 
 .blog-img-one {
-  background: linear-gradient(rgba(255, 255, 255, 0), black), url("../img/blog1.png");
-  background-size: cover;
+  position: relative;
   width: 23.4375rem;
   height: 19.375rem;
+  background: url("../img/blog1.png");
+  background-size: cover;
   margin-bottom: 10px;
+}
+
+.blog-img-one:before {
+  content: '';
+  position: absolute;
+  top: 65%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, transparent, #000000);
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .blog-img-two {
-  background: linear-gradient(rgba(255, 255, 255, 0), black), url("../img/blog2.png");
-  background-size: cover;
+  position: relative;
   width: 23.4375rem;
   height: 19.375rem;
+  background: url("../img/blog2.png");
+  background-size: cover;
   margin-bottom: 10px;
 }
 
+.blog-img-two:before {
+  content: '';
+  position: absolute;
+  top: 65%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, transparent, #000000);
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
 .blog-img-three {
-  background: linear-gradient(rgba(255, 255, 255, 0), black), url("../img/blog3.png");
-  background-size: cover;
+  position: relative;
   width: 23.4375rem;
   height: 19.375rem;
+  background: url("../img/blog3.png");
+  background-size: cover;
   margin-bottom: 10px;
+}
+
+.blog-img-three:before {
+  content: '';
+  position: absolute;
+  top: 65%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, transparent, #000000);
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.blog-date {
+  background-color: rgba(8, 8, 8, 0.4);
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.blog-date h3 {
+  font-family: "Raleway-bold";
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+
+.blog-title {
+  font-family: "Raleway-bold";
+  font-size: 1.25rem;
+  margin-top: 7.5rem;
+  margin-left: 20px;
+  position: relative;
+  z-index: 201;
+}
+
+.blog-title p:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.blog-title p:nth-child(2) {
+  font-family: "Raleway-light";
+  font-size: 0.8125rem;
 }
 
 #contact img {
@@ -381,6 +540,23 @@ img:hover img{
 #contact {
   height: 866px;
   background-position: center;
+}
+
+#contact h2 {
+  color: black;
+  font-family: "Raleway-bold";
+  font-size: 400%;
+  text-align: center;
+}
+
+#contact {
+  background-image: url("../img/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid green;
 }
 
 footer {
@@ -401,8 +577,7 @@ ul li {
 
 .col-centered {
   float: none;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 100px auto 0;
 }
 
 /*
@@ -461,7 +636,7 @@ ul li {
     width: auto;
     margin: 0 auto;
     padding-top: 5rem;
-    padding-left: 0rem;
+    padding-left: 0;
     margin-bottom: 4rem;
   }
   .services-button {
@@ -482,8 +657,7 @@ ul li {
     color: white;
   }
   .blog-img {
-    margin: 0 auto;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     width: 80vw;
   }
 }
