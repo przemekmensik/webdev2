@@ -349,17 +349,22 @@ h1 {
 }
 
 .peach {
-  height: 100%;
   width: 100%;
   padding: 0;
+  margin-bottom: 20px;
+}
+
+.img-responsive {
+  width: 100%;
 }
 
 .berries {
-  height: 49%;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .another_berries {
-  height: 49%;
+  width: 100%;
 }
 
 #gallery-button {
@@ -416,6 +421,7 @@ img:hover img{
 
 .blog-text {
   margin-bottom: 3.125rem;
+  text-align: center;
 }
 
 .blog-row {
@@ -537,7 +543,7 @@ img:hover img{
 }
 
 #contact {
-  height: 866px;
+  height: 100%;
   background-position: center;
 }
 
@@ -548,12 +554,15 @@ img:hover img{
   text-align: center;
 }
 
+#contact div {
+  text-align: center;
+}
+
 #contact {
   background-image: url("../img/contact.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  height: 100vh;
   margin: 0 auto;
   border: 1px solid green;
 }
@@ -579,10 +588,51 @@ ul li {
   margin: 100px auto 0;
 }
 
-/*
-.col-md-4 .col-sm-7 .col-xs-12 {
-	margin-top: 100px;
+form {
+  padding-bottom: 120px;
 }
+
+form input, form textarea {
+  background-color: rgba(0, 196, 196, 0.4);
+  border: none;
+  width: 70%;
+  height: 50px;
+  font-family: "Raleway-light";
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+form textarea {
+  height: 250px;
+  padding-top: 20px;
+}
+
+::placeholder {
+  color: white;
+}
+
+h4 {
+  font-family: "Raleway-bold";
+}
+
+.form-address {
+  margin-top: 30px;
+}
+
+.form-address-name {
+  margin-bottom: 25px;
+}
+
+.form-address-name p {
+  font-family: "Raleway-light";
+}
+
+/*
+.col-md-4 {
+	display: block;
+
+}
+*/
 /*
 ul li {
   color: $zmienna1;
