@@ -607,6 +607,11 @@ form textarea {
   padding-top: 20px;
 }
 
+.form-button {
+  background-color: rgba(0, 196, 196, 0.4);
+  width: 200px;
+}
+
 ::placeholder {
   color: white;
 }
@@ -670,8 +675,13 @@ ul li {
   #navigation-bar {
     display: none;
   }
-  .gallery-images img {
-    width: 90vw;
+  .about-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .berries, .peach {
+    margin-bottom: 0;
   }
   .gallery-row {
     width: auto;
@@ -708,6 +718,29 @@ ul li {
   .blog-img {
     margin: 0 auto 10px;
     width: 80vw;
+  }
+  .blog-row {
+    width: auto;
+    margin: 0 auto;
+  }
+  form {
+    padding-bottom: 30px;
+  }
+  form input, form textarea {
+    background-color: rgba(0, 196, 196, 0.4);
+    border: none;
+    width: 80vw;
+    height: 50px;
+    font-family: "Raleway-light";
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  form textarea {
+    height: 250px;
+    padding-top: 20px;
+  }
+  .form-address {
+    color: white;
   }
 }
 
