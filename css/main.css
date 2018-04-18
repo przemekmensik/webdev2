@@ -179,6 +179,19 @@ h1 {
   z-index: 500;
 }
 
+.navbar a {
+  color: #050505;
+  font-family: "Raleway-bold";
+  padding: 5px;
+  border-top: 3px solid rgba(249, 249, 251, 0);
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  border-top: 3px solid #ff6033;
+  text-decoration: none;
+}
+
 #navigation-bar {
   width: 100vw;
   border: 1px solid red;
@@ -191,14 +204,34 @@ h1 {
 
 #navigation-bar a {
   color: #050505;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  padding: 9px;
+  font-family: "Raleway-bold";
+  padding: 5px;
+  border-top: 3px solid #faf9fb;
   cursor: pointer;
 }
 
 #navigation-bar a:hover {
   border-top: 3px solid #ff6033;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  display: flex;
+}
+
+li:not(:first-child) {
+  border-left-width: 0;
+}
+
+a {
+  flex-grow: 1;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
   text-decoration: none;
 }
 
@@ -401,7 +434,45 @@ img:hover img{
 */
 #subscribe {
   background: #ffffff;
+  background: url("../img/subscribe.png");
+  background-repeat: no-repeat;
+  background-position: right;
   height: 500px;
+}
+
+#subscribe button {
+  background-color: #96b92c;
+  display: block;
+  float: right;
+  width: 170px;
+  height: 55px;
+  border: none;
+}
+
+.subscribe-text {
+  margin-top: 145px;
+}
+
+.subscribe-text h2 {
+  font-family: "Raleway-bold";
+  font-size: 40px;
+  text-align: left;
+}
+
+.subscribe-text p {
+  font-family: "Raleway-light";
+  text-align: left;
+}
+
+#subscribe-mail {
+  width: 570px;
+  height: 55px;
+  margin-left: -18px;
+}
+
+#subscribe-mail::placeholder {
+  color: #cccccc;
+  font-family: "Raleway-light";
 }
 
 #blog {
@@ -651,7 +722,8 @@ ul li {
 @media screen and (max-width: 768px) {
   .navbar {
     display: block;
-    background-color: rgba(249, 255, 241, 0.8);
+    background-color: rgba(249, 249, 251, 0.8);
+    border-top: 3px solid rgba(249, 249, 251, 0.8);
   }
   .navbar a {
     margin: 0 auto;
@@ -741,6 +813,19 @@ ul li {
   }
   .form-address {
     color: white;
+  }
+  .subscribe-text {
+    margin-top: 145px;
+  }
+  .subscribe-text h2 {
+    font-family: "Raleway-bold";
+    font-size: 40px;
+    text-align: left;
+    color: green;
+  }
+  .subscribe-text p {
+    font-family: "Raleway-light";
+    text-align: left;
   }
 }
 
