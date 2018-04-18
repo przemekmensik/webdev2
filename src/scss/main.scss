@@ -182,6 +182,7 @@ h1 {
 	margin: 0 auto;
 	text-align: center;
 	z-index: 500;
+	padding: 0;
 	a {
 		color: rgb(5, 5, 5);
 		font-family: "Raleway-bold";
@@ -680,7 +681,7 @@ ul li {
 	flex-flow: row wrap;
 	align-items: flex-end;
 	//float:right;
-	margin-top: 55px;
+	margin-top: 35px;
 	color: $zmienna1;
 	padding-right: 2%;
 	font-family: "Raleway-bold";
