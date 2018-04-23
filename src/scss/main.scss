@@ -284,6 +284,7 @@ a {
 
 	p {
 		margin: 20px 0;
+		font-family: "Raleway-light";
 	}
 }
 
@@ -500,6 +501,7 @@ img:hover img{
 	&::placeholder {
 		color: rgb(204, 204, 204);
 		font-family: "Raleway-light";
+		padding-left: 10px;
 	}
 }
 
@@ -555,7 +557,9 @@ img:hover img{
 		top: 65%;
 		right: 0;
 		bottom: 0;
-		left: 0;
+		//left: 0;
+		left: 2.2%;
+    width: 95.5%;
 		background-image: linear-gradient(to bottom, transparent, #000000);
 		//background-size: 100% 50%;
 		background-repeat: no-repeat;
@@ -575,9 +579,11 @@ img:hover img{
 		content: '';
 		position: absolute;
 		top: 65%;
-		right: 0;
+		right: 1%;
 		bottom: 0;
-		left: 0;
+		//	left: 0;
+		//left: 5%;
+		width: 98.5%;
 		background-image: linear-gradient(to bottom, transparent, #000000);
 		//background-size: 100% 50%;
 		background-repeat: no-repeat;
@@ -632,7 +638,7 @@ img:hover img{
 			z-index:201;
 
 			p:nth-child(1) {
-				margin-bottom: 20px;
+				margin-bottom: 1.25rem;
 			}
 
 			p:nth-child(2) {
@@ -659,6 +665,9 @@ img:hover img{
 		//display: inline-block;
 		text-align: center;
 	}
+	p {
+		font-family: "Raleway-light";
+	}
 }
 
 #contact {
@@ -672,7 +681,7 @@ img:hover img{
 }
 
 footer {
-	height: 90px;
+	height: 100%;
 	background: #262626;
 }
 
@@ -681,7 +690,7 @@ ul li {
 	flex-flow: row wrap;
 	align-items: flex-end;
 	//float:right;
-	margin-top: 35px;
+	margin-top: 55px;
 	color: $zmienna1;
 	padding-right: 2%;
 	font-family: "Raleway-bold";
@@ -735,6 +744,46 @@ form {
 	}
 }
 
+#mail {
+	//border: 3px solid red;
+	margin-bottom: 30px;
+}
+
+footer {
+	//display: inline-block;
+	//width: 100vw;
+	div {
+		display:flex;
+		padding: 5px;
+		//margin: 0 auto;
+	}
+	p {
+		color: #b9b9b9;
+		padding-top: 20px;
+		//float: left;
+		display: inline-block;
+		//display: flex;
+		//justify-content: space-around;
+	}
+	p:nth-child(1){
+		//float: right;
+		display: inline-block;
+	}
+
+	span {
+		color: red;
+	}
+}
+
+#footer-logo {
+	color: #b9b9b9;
+	display: inline-flex;
+	//padding: 300px;
+	justify-content: space-between;
+	font-family: "Pacifico";
+	font-size: 25px;
+  //padding-left: 18.75rem //działa ale nie na mobilkach;
+}
 /*
 .col-md-4 {
 	display: block;
@@ -851,6 +900,13 @@ ul li {
 		margin: 0 auto;
 	}
 
+	.blog-title {
+
+				p:nth-child(1) {
+					margin-bottom: 0.5rem;
+				}
+			}
+
 	form {
 		padding-bottom: 30px;
 
@@ -888,5 +944,22 @@ ul li {
 				text-align: left;
 			}
 		}
+
+		footer {
+			div {
+				display:block;
+				text-align: center;
+			}
+			p:nth-child(1){
+				//float: right;
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+		#footer-logo {
+			margin-top: 20px;
+		}
+
+
 
 }

@@ -270,6 +270,7 @@ a {
 
 #home p {
   margin: 20px 0;
+  font-family: "Raleway-light";
 }
 
 .btn {
@@ -474,6 +475,7 @@ img:hover img{
 #subscribe-mail::placeholder {
   color: #cccccc;
   font-family: "Raleway-light";
+  padding-left: 10px;
 }
 
 #blog {
@@ -528,7 +530,8 @@ img:hover img{
   top: 65%;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 2.2%;
+  width: 95.5%;
   background-image: linear-gradient(to bottom, transparent, #000000);
   background-repeat: no-repeat;
   opacity: 1;
@@ -547,9 +550,9 @@ img:hover img{
   content: '';
   position: absolute;
   top: 65%;
-  right: 0;
+  right: 1%;
   bottom: 0;
-  left: 0;
+  width: 98.5%;
   background-image: linear-gradient(to bottom, transparent, #000000);
   background-repeat: no-repeat;
   opacity: 1;
@@ -602,7 +605,7 @@ img:hover img{
 }
 
 .blog-title p:nth-child(1) {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .blog-title p:nth-child(2) {
@@ -630,6 +633,10 @@ img:hover img{
   text-align: center;
 }
 
+#contact p {
+  font-family: "Raleway-light";
+}
+
 #contact {
   background-image: url("../img/contact.png");
   background-repeat: no-repeat;
@@ -640,7 +647,7 @@ img:hover img{
 }
 
 footer {
-  height: 90px;
+  height: 100%;
   background: #262626;
 }
 
@@ -648,7 +655,7 @@ ul li {
   display: inline-flex;
   flex-flow: row wrap;
   align-items: flex-end;
-  margin-top: 35px;
+  margin-top: 55px;
   color: #23a30e;
   padding-right: 2%;
   font-family: "Raleway-bold";
@@ -702,6 +709,37 @@ h4 {
 
 .form-address-name p {
   font-family: "Raleway-light";
+}
+
+#mail {
+  margin-bottom: 30px;
+}
+
+footer div {
+  display: flex;
+  padding: 5px;
+}
+
+footer p {
+  color: #b9b9b9;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+footer p:nth-child(1) {
+  display: inline-block;
+}
+
+footer span {
+  color: red;
+}
+
+#footer-logo {
+  color: #b9b9b9;
+  display: inline-flex;
+  justify-content: space-between;
+  font-family: "Pacifico";
+  font-size: 25px;
 }
 
 /*
@@ -796,6 +834,9 @@ ul li {
     width: auto;
     margin: 0 auto;
   }
+  .blog-title p:nth-child(1) {
+    margin-bottom: 0.5rem;
+  }
   form {
     padding-bottom: 30px;
   }
@@ -827,6 +868,17 @@ ul li {
   .subscribe-text p {
     font-family: "Raleway-light";
     text-align: left;
+  }
+  footer div {
+    display: block;
+    text-align: center;
+  }
+  footer p:nth-child(1) {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #footer-logo {
+    margin-top: 20px;
   }
 }
 
