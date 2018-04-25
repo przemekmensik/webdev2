@@ -195,7 +195,6 @@ h1 {
 
 #navigation-bar {
   width: 100vw;
-  border: 1px solid red;
   background-color: #f9f8fb;
   position: fixed;
   margin: 0 auto;
@@ -205,7 +204,6 @@ h1 {
 
 #navigation-bar a {
   color: #050505;
-  font-family: "Raleway-bold";
   padding: 5px;
   border-top: 3px solid #faf9fb;
   cursor: pointer;
@@ -232,7 +230,6 @@ a {
   flex-grow: 1;
   color: white;
   text-align: center;
-  font-family: sans-serif;
   text-decoration: none;
 }
 
@@ -244,12 +241,11 @@ a {
   display: block;
   float: right;
   margin-right: 7vw;
-  margin-top: -25px;
+  margin-top: -10px;
 }
 
 .container {
   width: 100vw;
-  border: 1px solid red;
 }
 
 #home {
@@ -259,7 +255,6 @@ a {
   background-position: 0 85px;
   height: 100vh;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 #home h2 {
@@ -306,6 +301,7 @@ a {
 .about-content {
   color: white;
   margin-top: 11.250em;
+  font-family: "Raleway-light";
 }
 
 .about-content h2 {
@@ -337,11 +333,6 @@ a {
   margin-bottom: 9.375rem;
 }
 
-.services-button:before {
-  font-family: fontAwesome;
-  content: "\f067\00a0";
-}
-
 .services-button {
   width: 25rem;
   height: 6.25rem;
@@ -350,6 +341,56 @@ a {
   margin-bottom: 1.25rem;
   font-family: "Raleway-bold";
   font-size: 20px;
+}
+
+.services-button span {
+  display: block;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.services-button:nth-child(1):before {
+  content: " ";
+  display: inline-block;
+  float: right;
+  background-image: url("../img/icon_online.png");
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.services-button:nth-child(2):before {
+  content: " ";
+  display: inline-block;
+  float: right;
+  background-image: url("../img/quality_icon.png");
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.services-button:nth-child(3):before {
+  content: " ";
+  display: inline-block;
+  float: right;
+  background-image: url("../img/domestic_icon.png");
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  width: 55px;
+  height: 55px;
+}
+
+.services-button:nth-child(4):before {
+  content: " ";
+  display: inline-block;
+  float: right;
+  background-image: url("../img/organized_icon.png");
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  width: 55px;
+  height: 55px;
 }
 
 #gallery {
@@ -643,7 +684,6 @@ img:hover img{
   background-size: cover;
   background-position: right;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 footer {
@@ -734,12 +774,16 @@ footer span {
   color: red;
 }
 
-#footer-logo {
+#footer-logo a {
   color: #b9b9b9;
   display: inline-flex;
   justify-content: space-between;
   font-family: "Pacifico";
   font-size: 25px;
+}
+
+#footer-logo a:hover {
+  text-decoration: none;
 }
 
 /*
@@ -790,6 +834,7 @@ ul li {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 15px;
     border-radius: 15px;
+    font-family: "Raleway-light";
   }
   .berries, .peach {
     margin-bottom: 0;
@@ -810,10 +855,11 @@ ul li {
     margin-bottom: 4rem;
   }
   .services-button {
-    width: 20rem;
+    width: 25rem;
     height: 4.25rem;
     background-color: white;
     display: block;
+    margin: 0 auto;
     margin-bottom: 1.25rem;
     font-family: "Raleway-bold";
     font-size: 20px;

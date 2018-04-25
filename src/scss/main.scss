@@ -203,7 +203,7 @@ h1 {
 #navigation-bar {
 	//height: 147px;
 	width: 100vw;
-	border: 1px solid red;
+	//border: 1px solid red;
 	background-color: #f9f8fb;
 	position: fixed;
 	margin: 0 auto;
@@ -213,7 +213,7 @@ h1 {
 	//list-style-type: none;
 	a {
 		color: rgb(5, 5, 5);
-		font-family: "Raleway-bold";
+		//font-family: "Raleway-bold";
 		padding: 5px;
 		border-top: 3px solid #faf9fb;
 		cursor: pointer;
@@ -243,7 +243,7 @@ a {
   flex-grow: 1;
   color: white;
   text-align: center;
-  font-family: sans-serif;
+  //font-family: sans-serif;
   text-decoration: none;
   //padding: 10px 15px;
 //  background-color: #72c2cc;
@@ -258,12 +258,12 @@ a {
 	float: right;
 	//width: 500px;
 	margin-right: 7vw;
-	margin-top: -25px;
+	margin-top: -10px;
 }
 
 .container {
 	width: 100vw;
-	border: 1px solid red;
+	//border: 1px solid red;
 	//background: rgb(189, 19, 128);
 }
 
@@ -274,7 +274,7 @@ a {
 	background-position: 0 85px;
 	height: 100vh;
 	margin: 0 auto;
-	border: 1px solid green;
+	//border: 1px solid green;
 
 	h2 {
 		font-family: "Raleway-black";
@@ -322,6 +322,7 @@ a {
 	//display: flex;
 	color: rgb(255, 255, 255);
 	margin-top: 11.250em;
+	font-family: "Raleway-light";
 
 	h2 {
 		display: block;
@@ -361,23 +362,70 @@ a {
 	padding-top: 11.25rem;
 	padding-left: 7.1875rem;
 	margin-bottom: 9.375rem;
+
 }
 
-.services-button:before {
-	font-family: fontAwesome;
-	content: "\f067\00a0";
-}
+
 
 .services-button {
 	width: 25rem;
 	height: 6.25rem;
 	background-color: rgb(255, 255, 255);
 	display: block;
+	//padding-top: 20px;
 	margin-bottom: 1.25rem;
 	font-family: "Raleway-bold";
 	font-size: 20px;
+	span {
+		display: block;
+		margin-top: 15px;
+		margin-left: 25px;
+	}
 }
 
+.services-button:nth-child(1):before {
+	content: " ";
+	display: inline-block;
+	float: right;
+	background-image: url('../img/icon_online.png');
+	background-repeat: no-repeat;
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+.services-button:nth-child(2):before {
+	content: " ";
+	display: inline-block;
+	float: right;
+	background-image: url('../img/quality_icon.png');
+	background-repeat: no-repeat;
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+.services-button:nth-child(3):before {
+	content: " ";
+	display: inline-block;
+	float: right;
+	background-image: url('../img/domestic_icon.png');
+	background-repeat: no-repeat;
+	margin-right: 20px;
+	width: 55px;
+	height: 55px;
+}
+
+.services-button:nth-child(4):before {
+	content: " ";
+	display: inline-block;
+	float: right;
+	background-image: url('../img/organized_icon.png');
+	background-repeat: no-repeat;
+	margin-right: 20px;
+	width: 55px;
+	height: 55px;
+}
 #gallery {
 	background: #ffe92f;
 	//height: 1536px;
@@ -677,7 +725,7 @@ img:hover img{
 	background-position: right;
 	//height: 100vh;
 	margin: 0 auto;
-	border: 1px solid green;
+	//border: 1px solid green;
 }
 
 footer {
@@ -775,7 +823,7 @@ footer {
 	}
 }
 
-#footer-logo {
+#footer-logo a{
 	color: #b9b9b9;
 	display: inline-flex;
 	//padding: 300px;
@@ -783,6 +831,9 @@ footer {
 	font-family: "Pacifico";
 	font-size: 25px;
   //padding-left: 18.75rem //działa ale nie na mobilkach;
+	&:hover {
+		text-decoration: none;
+	}
 }
 /*
 .col-md-4 {
@@ -838,6 +889,7 @@ ul li {
 		background-color: rgba(0, 0, 0, 0.3);
 		padding: 15px;
 		border-radius: 15px;
+		font-family: "Raleway-light";
 	}
 
 	.gallery-images {
@@ -869,10 +921,11 @@ ul li {
 	}
 
 	.services-button {
-		width: 20rem;
+		width: 25rem;
 		height: 4.25rem;
 		background-color: white;
 		display: block;
+		margin: 0 auto;
 		margin-bottom: 1.25rem;
 		font-family: "Raleway-bold";
 		font-size: 20px;
