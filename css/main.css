@@ -109,7 +109,6 @@ video {
 }
 
 body {
-  background: white;
   height: 100vh;
   width: 100%;
 }
@@ -134,6 +133,14 @@ h2 {
   visibility: hidden;
 }
 */
+header {
+  background: url("../img/home.png") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
 .navbar-toggle {
   position: relative;
   float: right;
@@ -237,6 +244,10 @@ a {
   transform: translateY(-100%);
 }
 
+.navbar-header {
+  margin-left: 80%;
+}
+
 .menu {
   display: block;
   float: right;
@@ -246,15 +257,6 @@ a {
 
 .container {
   width: 100vw;
-}
-
-#home {
-  background-image: url("../img/home.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 85px;
-  height: 100vh;
-  margin: 0 auto;
 }
 
 #home h2 {
@@ -341,12 +343,17 @@ a {
   margin-bottom: 1.25rem;
   font-family: "Raleway-bold";
   font-size: 20px;
+  cursor: pointer;
 }
 
 .services-button span {
   display: block;
   margin-top: 15px;
   margin-left: 25px;
+}
+
+.services-button:hover {
+  box-shadow: 3px 3px 3px #292929;
 }
 
 .services-button:nth-child(1):before {
@@ -480,11 +487,10 @@ img:hover img{
 }
 */
 #subscribe {
-  background: #ffffff;
   background: url("../img/subscribe.png");
   background-repeat: no-repeat;
   background-position: right;
-  height: 500px;
+  height: 100%;
 }
 
 #subscribe button {
@@ -521,6 +527,11 @@ img:hover img{
   color: #cccccc;
   font-family: "Raleway-light";
   padding-left: 10px;
+}
+
+#subscribe-button {
+  margin-bottom: 150px;
+  float: right;
 }
 
 #blog {
@@ -701,7 +712,7 @@ ul li {
   align-items: flex-end;
   margin-top: 35px;
   color: #23a30e;
-  padding-right: 2%;
+  padding-right: 5%;
   font-family: "Raleway-bold";
   color: #262626;
 }
@@ -864,6 +875,10 @@ ul li {
     margin-bottom: 1.25rem;
     font-family: "Raleway-bold";
     font-size: 20px;
+    cursor: pointer;
+  }
+  .services-button:hover {
+    box-shadow: 10px 10px 5px grey;
   }
   #services h2 {
     margin-top: 10%;
@@ -876,6 +891,9 @@ ul li {
   #services .container {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .services-button span {
+    font-size: 1rem;
   }
   /*
 	.services-mobile {
@@ -918,16 +936,42 @@ padding-left: 0px;
   }
   .subscribe-text {
     margin-top: 145px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 15px;
   }
   .subscribe-text h2 {
     font-family: "Raleway-bold";
     font-size: 40px;
     text-align: left;
-    color: green;
+    color: white;
   }
   .subscribe-text p {
     font-family: "Raleway-light";
     text-align: left;
+    color: white;
+  }
+  #subscribe {
+    padding: 15px;
+    border-radius: 15px;
+    font-family: "Raleway-light";
+  }
+  #subscribe button {
+    float: none;
+  }
+  .subscribe-btn {
+    margin: 35px auto;
+    float: none;
+  }
+  #subscribe-button {
+    margin: 35px auto;
+    float: none;
+  }
+  #subscribe-mail {
+    width: 80vw;
+  }
+  header {
+    background-size: auto;
   }
   footer div {
     display: block;

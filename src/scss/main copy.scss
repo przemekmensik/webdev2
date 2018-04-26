@@ -109,7 +109,7 @@ video {
 }
 
 body {
-	//background: rgb(255, 255, 255);
+	background: rgb(255, 255, 255);
 	height: 100vh;
 	width: 100%;
 	//padding-top: 70px;
@@ -135,15 +135,6 @@ h2 {
   visibility: hidden;
 }
 */
-
-header {
-	background: url('../img/home.png')center center no-repeat;
-	//background: url(../image/strawberry.jpg) center center no-repeat;
-background-size: cover;
-width: 100vw;
-height: 100vh;
-position: relative;
-}
 
 .navbar-toggle {
 	position: relative;
@@ -262,10 +253,6 @@ a {
 	transform: translateY(-100%);
 }
 
-.navbar-header{
-	margin-left: 80%
-}
-
 .menu {
 	display: block;
 	float: right;
@@ -280,14 +267,13 @@ a {
 	//background: rgb(189, 19, 128);
 }
 
-
 #home {
-	//background-image: url('../img/home.png');
-	//background-repeat: no-repeat;
-	//background-size: cover;
-	//background-position: 0 85px;
-	//height: 100vh;
-	//margin: 0 auto;
+	background-image: url('../img/home.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 85px;
+	height: 100vh;
+	margin: 0 auto;
 	//border: 1px solid green;
 
 	h2 {
@@ -390,15 +376,10 @@ a {
 	margin-bottom: 1.25rem;
 	font-family: "Raleway-bold";
 	font-size: 20px;
-	cursor: pointer;
 	span {
 		display: block;
 		margin-top: 15px;
 		margin-left: 25px;
-	}
-
-	&:hover {
-	box-shadow: 3px 3px 3px rgb(41, 41, 41);
 	}
 }
 
@@ -535,11 +516,11 @@ img:hover img{
 }
 */
 #subscribe {
-	//background: #ffffff;
+	background: #ffffff;
 	background: url('../img/subscribe.png');
 	background-repeat: no-repeat;
 	background-position: right;
-	height: 100%;
+	height: 500px;
 	button {
 		background-color: #96b92c;
 		display: block;
@@ -575,11 +556,6 @@ img:hover img{
 		font-family: "Raleway-light";
 		padding-left: 10px;
 	}
-}
-
-#subscribe-button {
-	margin-bottom: 150px;
-	float: right;
 }
 
 #blog {
@@ -769,7 +745,7 @@ ul li {
 	//float:right;
 	margin-top: 35px;
 	color: $zmienna1;
-	padding-right: 5%;
+	padding-right: 2%;
 	font-family: "Raleway-bold";
 	color: #262626;
 }
@@ -958,11 +934,6 @@ ul li {
 		margin-bottom: 1.25rem;
 		font-family: "Raleway-bold";
 		font-size: 20px;
-		cursor: pointer;
-
-		&:hover {
-		box-shadow: 10px 10px 5px grey;
-		}
 	}
 
 	#services {
@@ -978,10 +949,6 @@ ul li {
 			padding-left: 0px;
 			padding-right: 0px;
 		}
-	}
-
-	.services-button span {
-		font-size: 1rem;
 	}
 
 /*
@@ -1035,53 +1002,18 @@ padding-left: 0px;
 
 		.subscribe-text {
 			margin-top: 145px;
-			background-color: rgba(0, 0, 0, 0.3);
-			padding: 25px;
-			border-radius: 15px;
 
 			h2 {
 				font-family: "Raleway-bold";
 				font-size: 40px;
 						text-align: left;
-						color: white;
+						color: green;
 			}
 
 			p {
 				font-family: "Raleway-light";
 				text-align: left;
-				color: white;
 			}
-		}
-
-		#subscribe {
-			//background-color: rgba(0, 0, 0, 0.3);
-			padding: 15px;
-			border-radius: 15px;
-			font-family: "Raleway-light";
-			button {
-				float: none;
-			}
-		}
-
-		.subscribe-btn {
-			margin: 35px auto;
-			float: none;
-		}
-
-		#subscribe-button {
-			margin: 35px auto;
-			float: none;
-		}
-
-		#subscribe-mail {
-			width: 80vw;
-		}
-
-
-
-
-		header {
-			background-size:auto;
 		}
 
 		footer {
