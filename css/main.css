@@ -969,6 +969,11 @@ padding-left: 0px;
   }
   #subscribe-mail {
     width: 80vw;
+    margin-left: 0;
+  }
+  .subscribe-row {
+    margin-right: 25px;
+    margin-left: -25px;
   }
   header {
     background-size: auto;
